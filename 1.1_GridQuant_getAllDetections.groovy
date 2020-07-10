@@ -32,7 +32,7 @@ import qupath.lib.roi.RectangleROI
 import qupath.lib.gui.scripting.QPEx
 
 // Input
-def OutDir = '/mnt/ndata/daniele/lung_multiregion/Reports/GridQuant_for_GitHub/Processed/All_detections/'
+def OutDir = 'All_detections/'
 def Sample = 's8B'
 //
 

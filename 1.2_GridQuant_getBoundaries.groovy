@@ -34,7 +34,7 @@ import qupath.lib.roi.RectangleROI
 import qupath.lib.gui.scripting.QPEx
 
 // Input
-def OutDir = '/mnt/ndata/daniele/lung_multiregion/Reports/GridQuant_for_GitHub/Processed/All_boundaries/'
+def OutDir = 'All_boundaries/'
 def OutFile = "s8B_closedBoundary_papillary_top.txt"
 //
 

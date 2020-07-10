@@ -1,6 +1,6 @@
 
 # 2.0_GridQuant_CreateGrid.R
-# This is step 2.0 of GridQuant pipeline. In this step, cell counts will be summarized as grid matrices with tunable pixel size.
+# This is step 2.0 of GridQuant pipeline. In this step, cell counts will be summarized as grid matrices with tunable tile size.
 
 # --- Usage ---
 # The script can be run directly after setting up inputs and other parameters. Importantly, you should change cell types according to the ones you assayed.
@@ -31,10 +31,10 @@ library(reshape2)
 library(ggplot2)
 
 ########## Input
-InDir_detections = "/mnt/ndata/daniele/lung_multiregion/Reports/GridQuant_for_GitHub/Processed/All_detections/"
-InDir_boundaries = "/mnt/ndata/daniele/lung_multiregion/Reports/GridQuant_for_GitHub/Processed/All_boundaries/"
-OutDir_matrices = "/mnt/ndata/daniele/lung_multiregion/Reports/GridQuant_for_GitHub/Processed/Grid_matrices/"
-OutDir_heatmaps = "/mnt/ndata/daniele/lung_multiregion/Reports/GridQuant_for_GitHub/Processed/Grid_heatmaps/"
+InDir_detections = "All_detections/"
+InDir_boundaries = "All_boundaries/"
+OutDir_matrices = "Grid_matrices/"
+OutDir_heatmaps = "Grid_heatmaps/"
 s = "s8B"
 grid_spacing = 100
 cellTypes = c("Bcell", "CD4", "CD8", "macrophages", "Ki67")
@@ -121,7 +121,6 @@ dir.create(OutDir_heatmaps, showWarnings = F)
 dir.create(OutDir_matrices, showWarnings = F)
 
 cat("\n", "Sample:", s, "\n")
-this_indir = paste0("/mnt/ndata/daniele/lung_multiregion/immunofluorescence/Processed/Gridding_onServer/gridding_results/","frozen_",s,"/")
 maxX = 0
 maxY = 0
 for (ct in as.character(cellTypes))
