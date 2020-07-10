@@ -23,6 +23,10 @@ _2.0_GridQuant_CreateGrid.R_
 
 Summarization of cell counts for each cell type into matrices of tunable grid size and plotting of counts heatmaps.
 
+_2.1_GridQuant_RegionWiseSummarization.R, 3.0_GridQuant_DensityAcrossPatterns.R, 3.1_GridQuant_ColocalizationsAcrossPatterns.R, 3.2_GridQuant_SolidBoundaryAnalyses.R_
+
+Various downstream analyses.
+
 **Citation**
 
 
