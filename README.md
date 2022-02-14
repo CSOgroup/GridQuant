@@ -28,7 +28,7 @@ _2.1_GridQuant_RegionWiseSummarization.R, 3.0_GridQuant_DensityAcrossPatterns.R,
 Various downstream analyses.
 
 **Citation**
-
+[Tavernari et al., Cancer Discovery 2021](https://cancerdiscovery.aacrjournals.org/content/11/6/1490)
 
 **Contacts**
 
